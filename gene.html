@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!--responsividade do site -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Análize de Gestão</title>
+
+    <!-- Bootstrap -->
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title></title>
+  <meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
+  <meta name="created" content="00:00:00"/>
+  <meta name="changed" content="2018-12-10T10:23:24.102121062"/>
+  
+  <style type="text/css">
+    body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Helvetica Neue"; font-size:x-small }
+    a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+    a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+    comment { display:none;  } 
+  </style>
+  <script type="text/javascript" src="calculo.js"></script>
+  <link rel="stylesheet" href="creative.css">
+
+  </head>
+
+
+  <body>
+
+    <!--<img src="indice.png" class="img-responsive" alt="image" width="634" height="237">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="public/js/bootstrap.min.js"></script>
+  
+
+
+
+
+<table bgcolor="#FFFFFF" id="gene" align="center" cellspacing="0" border="0">
+  <colgroup width="1022"></colgroup>
+  <colgroup width="137"></colgroup>
+  <colgroup width="281"></colgroup>
+  <colgroup width="137"></colgroup>
+  <colgroup width="230"></colgroup>
+  <colgroup width="137"></colgroup>
+  <tr bgcolor="#5ac6cb">
+    <td colspan=5 height="58" align="center" valign=middle><b><font face="Times New Roman" size=6 gcolor="#FF8C00">Diagnóstico de Gestão Empresarial de Novos Empreendimentos (GENE)</font></b></td>
+  </tr>
+
+    
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="32" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Nome da Empresa:</font></b>  
+    <input type="text" name="Nome_empresa">
+   </td>
+  
+    
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="32" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Setor de Atividade: 
+       <input type="checkbox" name="comércio">
+          Comércio 
+       <input type="checkbox" name="serviços">
+          Serviços 
+       <input type="checkbox" name="industria">
+          Industria
+    </font></b></td>
+
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #000000; border-right: 1px solid #000000" height="32" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Endereço: </font></b> <input type="text" name="nome"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="32" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Quantidade de Funcionários:</font></b> <input type="text" name="nome"></td>
+  </tr>
+  <tr>
+    <td>
+    <img src="indice.png" class="img-responsive" alt="image" width="634" height="237">
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #ffffff; border-bottom: 1px solid #000000; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff" height="47" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><i><font face="Times New Roman" size=6>Diagnóstico GENE</font></i></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #FFEB3B; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="41" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=5>Orientação para o Mercado </font></b></td>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Pontuação</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Frequentemente avalio se os meus produtos e/ou serviços poderiam ser vendidos em outros mercados, que não os planejados inicialmente. </font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="1" sdnum="1046;"><font face="Times New Roman" size=3><p>
+      <label>
+        <input type="text" name="campo1" id="campo1">
+      </label>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="74" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Quando percebo que meus produtos e/ou serviços são comprados por alguém que eu não tinha imaginado antes, incentivo positivamente a sua venda, pois sei que é mais importante servir o novo cliente do que pensar apenas no meu produto e/ou serviço de forma isolada.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="4" sdnum="1046;"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo2" id="campo2">
+      </label>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Em geral passo bastante tempo conversando com os meus clientes, vendedores e fornecedores para saber se estão satisfeitos com os meus produtos e/ou serviços.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="5" sdnum="1046;"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo3" id="campo3">
+      </label>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Quando percebo que meus produtos e/ou serviços são comprados por clientes que não imaginava antes, tento entender as suas motivações para descobrir como estão usando os meus produtos e/ou serviços.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="2" sdnum="1046;"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo4" id="campo4">
+      </label>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Acredito que o papel do meu negócio é servir os clientes atendendo as suas necessidades e não dizer o que devem fazer com os meus produtos e/ou serviços.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="1" sdnum="1046;"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo5" id="campo5">
+      </label>
+    </font></td>
+    <td bgcolor="#104E8B" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Ações Requeridas na Dimensão</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="30" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Diagnóstico Parcial da Dimensão</font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="2,6" sdnum="1046;"><b><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="resultado" id="resultado" readonly/>
+        <input type="button" name="btn" value="calcular" onclick="calculo();"/>
+      </label>
+    </font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><i><font face="Times New Roman" size=3><h4 id="texto">Se resultado for maior que 3.0, Monitorar e manter a dimensão.</h4> 
+   <h4 id="texto" >Se resultado for menor que 3.0, Melhorar a dimensão.</h4></font></i></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="41" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=5>Providência Financeira </font></b></td>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Pontuação</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Na minha empresa tenho dinheiro em caixa ou posso conseguir rapidamente para pagar os fornecedores 60 dias antes do prazo estabelecido por eles para o pagamento.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo6" id="campo6">
+      </label>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Atualmente possuo Capital de Giro (Dinheiro em caixa, Estoques, etc.) suficiente para manter o meu negócio em atividade por pelo menos 60 dias sem precisar de nenhum tipo de empréstimo.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo7" id="campo7">
+      </label>
+      
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="32" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Geralmente faço um controle detalhado das Contas a Pagar, das Contas a Receber e dos meus Estoques (se for o caso).</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo8" id="campo8">
+      </label>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="32" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Possuo relativa facilidade para obter empréstimos de instituições financeiras para aplicar no meu negócio.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo9" id="campo9">
+      </label>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Tenho conhecimento das áreas críticas do meu negócio (Capital de Giro; Contas a Pagar; Contas a Receber; Custo das Matérias-Primas; Despesas Administrativas e de Pessoal) e realizo um planejamento para evitar futuros problemas nessas áreas.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo10" id="campo10">
+      </label> 
+      <td bgcolor="#104E8B" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Ações Requeridas na Dimensão</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="30" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Diagnóstico Parcial da Dimensão </font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="0" sdnum="1046;"><b><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="resultado1" id="resultado1" readonly/>
+        <input type="button" name="btn" value="calcular" onclick="calculo1();"/>
+      </label>
+    </font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><i><font face="Times New Roman" size=3><h4>Se resultado for maior que 3.0, Monitorar e manter a dimensão.</h4> 
+   <h4>Se resultado for menor que 3.0, Melhorar a dimensão.</h4></font></i></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Como Gestor do meu negócio, sempre procuro descentralizar o máximo possível de atribuições para os demais funcionários, pois acredito possuir uma boa equipe de profissionais.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo11" id="campo11">
+      </label> 
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Possuo uma pequena quantidade de funcionários de confiança que ajudam diariamente na Gestão do meu negócio, mesmo que de forma informal.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo12" id="campo12">
+      </label> 
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Procuro incentivar o trabalho em equipe entre os funcionários, pois acredito que a colaboração é a chave para o sucesso do meu negócio.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo13" id="campo13">
+      </label> 
+      <br></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Geralmente me concentro em poucas áreas importantes que consigo fazer bem e me certifico que outras atividades importantes e bem definidas sejam realizadas por funcionários de confiança e com competências para desenvolver um bom trabalho.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo14" id="campo14">
+      </label> 
+      <br></font></td>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Deixo claro sempre que possível o que espero dos funcionários em termos de obrigações e responsabilidades, dando informações e orientações para que desempenhem um bom trabalho.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="campo15" id="campo15">
+      </label> 
+      <br></font></td>
+    <td bgcolor="#104E8B" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Ações Requeridas na Dimensão</font></b></td>
+  <tr>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="30" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Diagnóstico Parcial da Dimensão </font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="0" sdnum="1046;"><b><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="resultado2" id="resultado2" readonly/>
+        <input type="button" name="btn" value="calcular2" onclick="calculo2();"/>
+      </label>
+      </font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><i><font face="Times New Roman" size=3><h4>Se resultado for maior que 3.0, Monitorar e manter a dimensão.</h4> 
+   <h4>Se resultado for menor que 3.0, Melhorar a dimensão.</h4></font></i></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="41" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=5>Papel do Fundador da Empresa</font></b></td>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Pontuação</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="32" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Costumo me perguntar do que é que o meu negócio vai precisar futuramente em termos de Gestão.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+       <label>
+        <input type="text" name="campo16" id="campo16">
+      </label> <br></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Dentro do que identifico como necessidades futuras de Gestão, me pergunto constantemente como posso contribuir para satisfazer essas necessidades.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+       <label>
+        <input type="text" name="campo17" id="campo17">
+      </label> 
+      <br></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Acredito que seja importante fazer algo que eu realmente quero fazer dentro da empresa, algo que eu verdadeiramente goste de fazer e que constitua uma contribuição valiosa para o meu negócio.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+       <label>
+         <input type="text" name="campo18" id="campo18">
+       </label> 
+      <br></font></td>
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Sempre me pergunto qual é o meu lugar no meu negócio para me certificar de que estou dando contribuições valiosas e indispensáveis para o crescimento e o desenvolvimento do meu negócio.</font></td>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+       <label>
+        <input type="text" name="campo19" id="campo19">
+      </label> 
+  </tr>
+  <tr>
+    <td bgcolor="#104e8b" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="53" align="justify" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><font face="Times New Roman" size=4>Frequentemente discuto com pessoas de confiança (amigos ou parentes que não fazem parte do negócio) decisões fundamentais tomadas por mim no meu negócio, pois acredito que opiniões externas podem contribuir para a Gestão do meu negócio. </font></td>
+    <td bgcolor="#53868B" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><font face="Times New Roman" size=3>
+       <label>
+        <input type="text" name="campo20" id="campo20">
+      </label> 
+      <br></font></td>
+    <td bgcolor="#104E8B" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Ações Requeridas na Dimensão</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="30" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=3>Diagnóstico Parcial da Dimensão </font></b></td>
+    <td bgcolor="RED"  style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF" sdval="0" sdnum="1046;"><b><font face="Times New Roman" size=3>
+      <label>
+        <input type="text" name="resultado3" id="resultado3" readonly/>
+        <input type="button" name="btn" value="calcular3" onclick="calculo3();"/>
+      </label>
+    </font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><i><font face="Times New Roman" size=3><h4>Se resultado for maior que 3.0, Monitorar e manter a dimensão.</h4> 
+   <h4>Se resultado for menor que 3.0, Melhorar a dimensão.</h4</font></i></b></td>
+    
+  </tr>
+
+  <tr>
+    <td bgcolor="#5ac6cb" style="border-top: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #000000; border-right: 1px solid #000000" height="41" align="center" valign=center bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=5>DIAGNÓSTICO GERAL</font></b></td>
+        <td bgcolor="#5ac6cb" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><font face="Times New Roman" size=4>Pontuação</font></b></td>
+    </font></b></td>
+    <td bgcolor="#104E8B" style="border-top: 1px solid #000000; border-bottom: 1px solid #ffffff; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><i><font face="Times New Roman" size=5>Estado Atual da Gestão Empresarial do Empreendimento </font></i></b></td>
+    <td align="left" valign=top><br></td>
+  </tr>
+  <tr>
+    <td bgcolor="RED" style="border-top: 1px solid #ffffff; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="58" align="left" valign=top bgcolor="#FFFFFF"><b><font face="Times New Roman" size=3><br></font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #ffffff; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=center bgcolor="#FFFFFF"><b><font face="Times New Roman" size=3>
+        <label>
+        <input type="text" name="resultado4" id="resultado4" readonly/>
+        <input type="button" name="btn" value="calcular4" onclick="calculo4();"/>
+      </label>
+      <br></font></b></td>
+    <td bgcolor="RED" style="border-top: 1px solid #ffffff; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=top bgcolor="#FFFFFF" sdnum="1046;0;@"><b><i><font face="Times New Roman" size=4><h4>Se o resultado for maior que 3.0, significa que o seu Empreendimento com Gestão Empresarial em Geral Adequada (Verificar as Dimensões que necessitam de melhorias)</h4><h4>Se o resultado for menor que 3.0 significa que o seu Empreendimento está com Deficiências de Gestão Empresarial (Verificar as Dimensões que necessitam de correções)</h4>
+    </font></i></b></td>
+    <td align="left" valign=top><br></td>
+  </tr>
+</table>
+
+<br clear=left>
+<center><footer>&copy Página da AGIFPI, todos os direitos reservados.</footer></center>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
